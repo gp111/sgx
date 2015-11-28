@@ -1,0 +1,217 @@
+<!DOCTYPE html><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="http://ir.listedcompany.com/images/css_si_common.css">
+<link rel="stylesheet" type="text/css" href="http://ir.listedcompany.com/images/css_ir_common.css">
+<link rel="stylesheet" type="text/css" href="http://cosco.listedcompany.com/images/css_ir_cosco.css">
+<!--script type="text/javascript" src="http://cosco.listedcompany.com/images/js_ir_cosco.js"></script-->
+<!--script type="text/javascript" src="/images/rollover_images.js"></script--></head>
+<body >
+
+<h1>Stock Information : <span class="blueText">Investment Calculator</span></h1>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+ var si_si_g=navigator.userAgent.toLowerCase();var _si_gecko=(si_si_g.indexOf("gecko")!= -1);var _si_IE=document.all?true:false;var _si_mouseX=0;var _si_mouseY=0;document.onmousemove=si_si_b;function si_selectDropDownRemoveAllOptions(si_si_x){var i;for(i=si_si_x.options.length-1;i>=0;i--){si_si_x.remove(i);}};function si_selectDropDownAddOption(si_si_x,value,text){var si_si_M=document.createElement("option");si_si_M.text=text;si_si_M.value=value;si_si_x.options.add(si_si_M);};function si_si_b(e){if(!e)e=window.event;if(!e)return;if(typeof(e.pageX)=='number'){_si_mouseX=e.pageX;_si_mouseY=e.pageY;}else if(typeof(e.clientX)=='number'){_si_mouseX=e.clientX;_si_mouseY=e.clientY;if(document.body&&(document.body.scrollLeft||document.body.scrollTop)){_si_mouseX+=document.body.scrollLeft;_si_mouseY+=document.body.scrollTop;}else if(document.documentElement&&(document.documentElement.scrollLeft||document.documentElement.scrollTop)){_si_mouseX+=document.documentElement.scrollLeft;_si_mouseY+=document.documentElement.scrollTop;}}if(_si_mouseX<0)_si_mouseX=0;if(_si_mouseY<0)_si_mouseY=0;return;};function si_getObject(si_si_F){if(document.getElementById&&document.getElementById(si_si_F))return document.getElementById(si_si_F);else if(document.all&&document.all(si_si_F))return document.all(si_si_F);else return false;};function si_changeObjectStyle(si_si_F,si_si_z,si_si_y){var si_si_E=si_getObject(si_si_F).style;if(si_si_E){if(si_si_z=='display')si_si_E.display=si_si_y;if(si_si_z=='visibility')si_si_E.visibility=si_si_y;if(si_si_z=='left')si_si_E.left=si_si_y;if(si_si_z=='top')si_si_E.top=si_si_y;if(si_si_z=='zIndex')si_si_E.zIndex=si_si_y;return true;}else return false;};function si_toggleObjectDisplay(si_si_F){var si_si_n;var si_si_D=si_getObject(si_si_F);if(si_si_D){if(window.getComputedStyle)si_si_n=window.getComputedStyle(si_si_D,null).getPropertyValue('display');else if(si_si_D.currentStyle)si_si_n=eval('si_si_D.currentStyle.display');if(si_si_n=='none')if(si_si_D=='[object HTMLTableRowElement]')si_si_D.style.display='table-row';else si_si_D.style.display='block';else if(si_si_n=='table-row')si_si_D.style.display='none';else if(si_si_n=='block')si_si_D.style.display='none';}return true;};function si_setCookie(name,value,si_si_l){var expires;if(si_si_l){var si_si_k=new Date();si_si_k.setTime(si_si_k.getTime()+(si_si_l*24*60*60*1000));expires="; expires="+si_si_k.toGMTString();}else expires="";document.cookie=name+"="+value+expires+"; path=/";};function si_getCookie(name){var si_si_K=name+"=";var si_si_h=document.cookie.split(';');var n;for(n=0;n<si_si_h.length;n++){var c=si_si_h[n];while(c.charAt(0)==' ')c=c.substring(1,c.length);if(c.indexOf(si_si_K)==0)return c.substring(si_si_K.length,c.length);}return null;};function si_openWindow(si_si_v,si_si_t,si_si_p){window.open(si_si_v,si_si_t,si_si_p);};var si_si_e,si_si_d='',si_si_c,si_si_f;function si_dropDownSearchPopulate(si_si_w){var si_si_o=(si_si_w)?((si_si_w.target)?si_si_w.target:si_si_w.srcElement):window.event.srcElement;if(si_si_f!=si_si_o){si_si_c=new Array();for(var i=0;i<si_si_o.options.length;i++)si_si_c[i]=si_si_o.options[i].text.toLowerCase();si_si_f=si_si_o;}};function si_dropDownSearchSetSelection(si_si_w){var si_si_I=(si_si_w)?si_si_w:window.event;var si_si_o=(si_si_I.target)?si_si_I.target:si_si_I.srcElement;var keyCode=si_si_I.keyCode;if((keyCode>47&&keyCode<58)||(keyCode>64&&keyCode<91||keyCode==32));else if(keyCode>95&&keyCode<106)keyCode-=48;else if(keyCode>105&&keyCode<112)keyCode-=64;else if(keyCode>187&&keyCode<192)keyCode-=144;else if(keyCode>218&&keyCode<222)keyCode-=128;else{switch(keyCode){case 187:keyCode=61;break;case 222:keyCode=39;break;case 192:keyCode=96;break;case 186:keyCode=59;break;default:return;}}var si_si_i=String.fromCharCode(keyCode).toLowerCase();var si_si_q,si_si_j=si_si_o.selectedIndex,si_si_u=false;var si_si_L=new Date().getTime();if(si_si_e!=null&&si_si_L-si_si_e<1000){si_si_d+=si_si_i;si_si_q=si_si_a();if(si_si_q== -1)return;}else{si_si_d=si_si_i;si_si_q=si_si_j+1;if(si_si_q>=si_si_c.length||si_si_c[si_si_q].length==0||si_si_c[si_si_q].charAt(0)!=si_si_d)si_si_q=si_si_a();}if(si_si_q>=0){si_si_o.options[si_si_j].selected=false;var si_si_B=new RegExp('^'+si_si_d.charAt(0)+'+$',"i");if(_si_gecko&&si_si_B.test(si_si_d)&&si_si_q>0)si_si_o.options[si_si_q-1].selected=true;else si_si_o.options[si_si_q].selected=true;}si_si_e=si_si_L;};function si_si_a(){var si_si_O=si_si_d.length;for(var i=0;i<si_si_c.length;i++)if(si_si_c[i].length>=si_si_O&&si_si_c[i].substring(0,si_si_O)==si_si_d)return i;return-1;};function si_formatNumber(si_si_N,si_si_B,si_si_J){var result='';var si_si_H=0;si_si_G=si_si_N.split('.');si_si_r=si_si_G[0];si_si_N+='';if(si_si_N<0)si_si_H=1;si_si_s=si_si_r.length-1;si_si_A=si_si_B.length-1;while((si_si_s>=0)&&(si_si_A>=0)){var si_si_m=si_si_r.charAt(si_si_s);si_si_s--;if((si_si_m<'0')||(si_si_m>'9'))continue;while(si_si_A>=0){var si_si_C=si_si_B.charAt(si_si_A);si_si_A--;if(si_si_C=='#'){result=si_si_m+result;break;}else{result=si_si_C+result;}}}if(si_si_G[1])result=result+'.'+si_si_G[1];if(si_si_H){if(si_si_J=='()')result='('+result+')';else result='-'+result;}return result;}
+ 
+ // function ir_searchPreSearchCheck(si_ir_m){var si_ir_r;if(!si_ir_m)si_ir_m=3;document.search.search.value=si_ir_c(document.search.search.value);si_ir_r=escape(document.search.search.value);if(si_ir_r.length<si_ir_m){alert("Your search term should be at least "+si_ir_m+" characters long");document.search.search.select();document.search.search.focus();return false;}else{return true;}};function si_ir_c(si_ir_s){while(si_ir_s.substring(0,1)==' '){si_ir_s=si_ir_s.substring(1,si_ir_s.length);}while(si_ir_s.substring(si_ir_s.length-1,si_ir_s.length)==' '){si_ir_s=si_ir_s.substring(0,si_ir_s.length-1);}return si_ir_s;};var si_ir_l,si_ir_k,si_ir_i,si_ir_j;function ir_chartEasyStaticToggleV2(si_ir_e,si_ir_f){var si_ir_q;if(si_ir_f.chart.value.match(/\?/))si_ir_q='&';else si_ir_q='?';si_ir_k=si_ir_e;si_ir_l=si_ir_f.chart.value+si_ir_q+'nocache='+Math.floor(Math.random()*99999999);document.getElementById(si_ir_e).innerHTML='<br><br>Loading...';si_ir_i=new Image();si_ir_b();si_ir_i.onload=si_ir_a;if(!si_ir_j){setTimeout('si_ir_b()',2000);}};function ir_chartEasyStaticToggle(si_ir_e,si_ir_f){si_ir_k=si_ir_e;si_ir_l=si_ir_f.url_chart_base.value+'/'+si_ir_f.chart.value+'.'+si_ir_f.chart_file_extension.value+'?'+Math.floor(Math.random()*99999999);document.getElementById(si_ir_e).innerHTML='<br><br>Loading...';si_ir_i=new Image();si_ir_b();si_ir_i.onload=si_ir_a;if(!si_ir_j){setTimeout('si_ir_b()',2000);}};function si_ir_b(){si_ir_i.src=si_ir_l;};function si_ir_a(){document.getElementById(si_ir_k).innerHTML='<img src="'+si_ir_l+'">';si_ir_j=1;};function ir_jsonGetData(si_ir_t,si_ir_h,si_ir_g,si_ir_d){var url;if(si_ir_t.indexOf('?')!= -1)si_ir_w='&';else si_ir_w='?';var si_ir_v='';var si_ir_u=location.href.split("?");if(si_ir_u[1])si_ir_v=escape(si_ir_u[1]);url=si_ir_t+si_ir_w+'json_id='+si_ir_g+'&json_callback='+si_ir_d+'&json_get='+si_ir_v;var si_ir_p=document.getElementById(si_ir_h);var head=document.getElementsByTagName("head").item(0);if(si_ir_p)head.removeChild(si_ir_p);si_ir_p=document.createElement("script");si_ir_p.setAttribute("src",url);si_ir_p.setAttribute("id",si_ir_h);head.appendChild(si_ir_p);};function ir_jsonIntegrate(si_ir_n){var i;for(i=0;i<si_ir_n.result.html.length;i++){var si_ir_o=document.getElementById(si_ir_n.result.html[i].id);if(si_ir_o)si_ir_o.innerHTML=si_ir_n.result.html[i].content;}} 
+  
+  
+
+function ir_calculateCommission(value)
+{
+	var min_comm = document.calculator.min_commission_enter.value;
+
+	var comm = value * (document.calculator.commission_enter.value / 100);
+	if (comm < min_comm) { comm = min_comm; }
+
+	return comm;
+}
+
+function ir_calculateClearingFee(value)
+{
+	var fee = value * (0.04 / 100);
+
+	if (fee > 600)
+	{
+	  fee = 600;
+	}
+
+	return fee;
+}
+
+function ir_calculateSGXAccessFee(value)
+{
+	var sgx_fee = value * (0.0075/100);
+	return sgx_fee;
+}
+
+function ir_calculateAmount()
+{
+	// Get values for Shares Held, Price Purchase and Price Sold
+	document.calculator.shares_held.value = si_formatNumber(document.calculator.shares_held_enter.value, "###,###,###,###,###,###,###", "()");
+	document.calculator.price_purchase.value = si_formatNumber(document.calculator.price_purchase_enter.value, "###,###,###,###,###,###,###", "()");
+	document.calculator.price_sold.value = si_formatNumber(document.calculator.price_sold_enter.value, "###,###,###,###,###,###,###", "()");
+
+	if (document.calculator.shares_held_enter.value && document.calculator.price_purchase_enter.value && document.calculator.price_sold_enter.value)
+	{
+  	// Calculate Profit
+  	var buy_value=document.calculator.shares_held_enter.value*document.calculator.price_purchase_enter.value;
+  	var sell_value=document.calculator.shares_held_enter.value*document.calculator.price_sold_enter.value;
+  	var profit=sell_value-buy_value;
+
+  	document.calculator.profit.value = si_formatNumber(profit.toFixed(2), "###,###,###,###,###,###,###", "()");
+
+  	var commission=parseFloat(ir_calculateCommission(buy_value))+parseFloat(ir_calculateCommission(sell_value));
+  	var clearing_fee=parseFloat(ir_calculateClearingFee(buy_value))+parseFloat(ir_calculateClearingFee(sell_value));
+  	var sgx_fee=parseFloat(ir_calculateSGXAccessFee(buy_value))+parseFloat(ir_calculateSGXAccessFee(sell_value));
+
+  	var total_fee=parseFloat(commission)+parseFloat(clearing_fee)+parseFloat(sgx_fee);
+  	var gst=total_fee*(document.calculator.gst_enter.value/100);
+  	var comm_gst=parseFloat(total_fee)+parseFloat(gst);
+
+  	document.calculator.commission.value = si_formatNumber(commission.toFixed(2), "###,###,###,###,###,###,###", "()");
+  	document.calculator.clearing.value = si_formatNumber(clearing_fee.toFixed(2), "###,###,###,###,###,###,###", "()");
+  	document.calculator.sgx_access.value = si_formatNumber(sgx_fee.toFixed(2), "###,###,###,###,###,###,###", "()");
+  	document.calculator.gst.value = si_formatNumber(gst.toFixed(2), "###,###,###,###,###,###,###", "()");
+
+  	var net_profit=parseFloat(profit)-comm_gst;
+  	document.calculator.net_profit.value = si_formatNumber(net_profit.toFixed(2), "###,###,###,###,###,###,###", "()");
+
+  	var buy_comm=parseFloat(ir_calculateCommission(buy_value))+parseFloat(ir_calculateClearingFee(buy_value))+parseFloat(ir_calculateSGXAccessFee(buy_value));
+  	var invest_change_percent=(net_profit/(parseFloat(buy_value)+parseFloat(buy_comm)))*100;
+
+  	document.calculator.invest_change_percent.value = si_formatNumber(invest_change_percent.toFixed(3), "###,###,###,###,###,###,###", "()");
+  }
+  else
+  {
+    document.calculator.profit.value='';
+    document.calculator.commission.value='';
+    document.calculator.clearing.value='';
+    document.calculator.sgx_access.value='';
+    document.calculator.gst.value='';
+    document.calculator.net_profit.value='';
+    document.calculator.invest_change_percent.value='';
+  }
+
+  // Calculate Dividend
+	if (document.calculator.shares_held_enter.value && (document.calculator.dividend_taxed_enter.value || document.calculator.dividend_tax_exempt_enter.value))
+	{
+	  var dividend_taxed = document.calculator.dividend_taxed_enter.value ? document.calculator.dividend_taxed_enter.value : 0;
+	  var dividend_tax_exempt = document.calculator.dividend_tax_exempt_enter.value ? document.calculator.dividend_tax_exempt_enter.value : 0;
+
+	  var net_dividend=document.calculator.shares_held_enter.value * (parseFloat(dividend_taxed * 0.82) + parseFloat(dividend_tax_exempt));
+	  document.calculator.net_dividend.value = si_formatNumber(net_dividend.toFixed(2), "###,###,###,###,###,###,###", "()");
+	}
+	else
+	{
+	  document.calculator.net_dividend.value='';
+	}
+}
+/* ]]> */
+</script>
+
+<form name="calculator" action="">
+
+<table width="100%" cellspacing="1" cellpadding="3" class="ir_table" >
+  <tr>
+    <td colspan="3"><strong>Profit &amp; Loss Calculation</strong></td>
+  </tr>
+  <tr>
+    <td><label for="price_purchase_enter">Price Purchased (S$)</label></td>
+    <td><input type="number" min="0" step="0.01" inputmode="numeric" pattern="[0-9]*" id="price_purchase_enter" name="price_purchase_enter" onchange="javascript:ir_calculateAmount();"></td>
+  </tr>
+  <tr>
+    <td><label for="shares_held_enter">Share Held</label></td>
+    <td><input type="number" min="0" inputmode="numeric" pattern="[0-9]*" id="shares_held_enter" name="shares_held_enter" onchange="javascript:ir_calculateAmount();">
+	</td>
+  </tr>
+  <tr>
+    <td><label for="commission_enter">Commission (%)</label></td>
+    <td><input type="number" min="0" step="0.01" inputmode="numeric" pattern="[0-9]*" id="commission_enter" name="commission_enter" value="0.28" onchange="javascript:ir_calculateAmount();"></td>
+  </tr>
+  <tr>
+    <td><label for="min_commission_enter">Minimum Commission (S$)</label></td>
+    <td><input type="number" min="0" step="0.01" inputmode="numeric" pattern="[0-9]*" id="min_commission_enter" name="min_commission_enter" value="25" onchange="javascript:ir_calculateAmount();"></td>
+  </tr>
+  <tr>
+    <td><label for="gst_enter">GST (%)</label></td>
+    <td><input type="number" min="0" inputmode="numeric" pattern="[0-9]*" id="gst_enter" name="gst_enter" value="7" onchange="javascript:ir_calculateAmount();"></td>
+  </tr>
+  <tr>
+    <td><label for="price_sold_enter">Price Sold (S$)</label></td>
+    <td><input type="number" min="0" step="0.01" inputmode="numeric" pattern="[0-9]*" id="price_sold_enter" name="price_sold_enter" value="" onchange="javascript:ir_calculateAmount();"> <INPUT TYPE="BUTTON" NAME="OK" value="OK" onclick="javascript:ir_calculateAmount();" ></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div class="ir_textDivider"></div></td>
+  </tr>
+  <tr>
+    <td colspan="3"><strong>Gross Dividend Per Share</strong></td>
+  </tr>
+  <tr>
+    <td><label for="dividend_taxed_enter">Taxed (S$)</label></td>
+    <td colspan="2"><input type="text" id="dividend_taxed_enter" name="dividend_taxed_enter" onchange="javascript:ir_calculateAmount();"></td>
+  </tr>
+  <tr>
+    <td><label for="dividend_tax_exempt_enter">Tax Exempt (S$)</label></td>
+    <td colspan="2"><input type="text" id="dividend_tax_exempt_enter" name="dividend_tax_exempt_enter" onchange="javascript:ir_calculateAmount();"></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="3" class="ir_table ir_tableBorder si_marginTop si_marginBottom" >
+  <tr class="row2">
+    <td>Share Held</td>
+    <td width="30%"><input type="text" name="shares_held" onfocus="document.calculator.shares_held_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Price Purchased Per Share (S$)</td>
+    <td><input type="text" name="price_purchase" onfocus="document.calculator.price_purchase_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Price Sold (S$)</td>
+    <td><input type="text" name="price_sold" onfocus="document.calculator.price_sold_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Total Gross Profit(Loss) On These Shares (S$)</td>
+    <td><input type="text" name="profit" onfocus="document.calculator.shares_held_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Less Buying And Selling Commission (S$)</td>
+    <td><input type="text" name="commission" onfocus="document.calculator.commission_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Less Clearing Fee (S$)</td>
+    <td><input type="text" name="clearing" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Less SGX Access Fee (S$)</td>
+    <td><input type="text" name="sgx_access" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Less GST (S$)</td>
+    <td><input type="text" name="gst" onfocus="document.calculator.gst_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>Net Profit(Loss) (S$)</td>
+    <td><input type="text" name="net_profit" onfocus="document.calculator.shares_held_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+  <tr class="row2">
+    <td>As A Percentage, Your Investment Has Changed (%)</td>
+    <td><input type="text" name="invest_change_percent" onfocus="document.calculator.shares_held_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="3" class="ir_table ir_tableBorder" >
+  <tr class="row1">
+    <td>Net Dividend (S$)</td>
+    <td width="30%"><input type="text" name="net_dividend" onfocus="document.calculator.dividend_taxed_enter.select();" class="ir_investmentCalculator"></td>
+  </tr>
+</table>
+
+</form>
+</div>
+</div>
+
+</body>
+</body>
+</html>
